@@ -49,7 +49,7 @@
    </section>
    <section data-role="page" id="addGolfForm" data-add-back-btn="true" data-ajax="false">
         <div data-role="header" data-postion="fixed" data-theme="">
-            <h1>Golf Stats Form</h1>
+        <div><h1>Golf Stats Form</h1></div>
         <div data-role="content">
             <p>*Fields are required</p>
             <form action="" id="golfForm">
@@ -90,6 +90,17 @@
                             <option value="Hole #1">Hole #16</option>
                             <option value="Hole #1">Hole #17</option>
                             <option value="Hole #1">Hole #18</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="choose">Ball Position*</label>
+                    <select name="choose" id="ballPosition" data-native-menu="false" class="required" data-theme="a" data-content-theme="a">
+                        <option data-placeholder="true">Fairway Position</option>
+                        <optgroup label="Ball Position">
+                            <option value="Center Fairway">Center Fairway</option>
+                            <option value="Left Fairway">Left Fairway</option>
+                            <option value="Right Fairway">Right Fairway</option>
                         </optgroup>
                     </select>
                 </div>
